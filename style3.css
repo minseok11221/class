@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+
+li {
+    list-style-type: none;
+}
+header {
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #2698cb;
+    margin-bottom: 20px;
+}
+header a {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+}
+.row {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    /* border: solid 1px red*/
+}
+.row img { 
+    max-width:100% 
+}
+.row ul {
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.row ul:last-child {
+    padding-right: 20px;
+}
+.row.li {
+    margin-bottom: 5px;
+}
+.row li:nth-child(2) { font-weight:bold;}
+.row li:nth-child(3) { color: red;}
+.row li:last-child {
+    text-align: right;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+/* 푸터 */
+.footer {
+    padding: 25px 0;
+    text-align: center;
+}
+.footer ul {
+    margin-bottom: 20px;
+}
+.footer li {
+    position: relative;
+    display: inline;
+    padding: 0 7px 0 10px;
+}
+.footer li:before {
+    content:' '; 
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.footer li:first-child::before {
+    width: 0;
+    height: 0;
+}
+
+

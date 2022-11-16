@@ -1,0 +1,114 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ir_su {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999;
+}
+/* 접근성을 위한 숨김 텍스트 */
+
+#main {
+    max-width: 67rem;
+}
+body {
+    background: no-repeat;
+    background-image: url(/images/백그라운드.jpg);
+    background-size: cover;
+    min-height: 100vh;
+     font-family: 'Nanum Gothic', sans-serif;
+}
+#header .avatar {
+    border: 1px solid #fff;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 0;
+}
+#header img {
+    border-radius: 100%;
+    display: inline-block;
+}
+#header h1, #header h1 a {
+    color: white;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+#header h1 a {
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+}
+#main .thumbnails {
+    display: flex;
+}
+#main .thumbnails div {
+    width: 100%;
+    margin: 0 1rem;
+}
+#main .thumbnails a {
+    display: inline-block;
+    width: 100%;
+    margin:0.6rem 0;
+}
+#main .thumbnails img {
+    width: 100%;
+    display:inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+#main .thumbnails a {
+    text-decoration: none;
+}
+#main .thumbnails h3 {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 200;
+    color:rgba(255, 255, 255, 0.82);
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.13);
+    border: 1px solid  rgba(255, 255, 255, 0.21);
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+/* 푸터 */
+.footer {
+    padding: 25px 0;
+    text-align: center;
+    color: #fff;
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer ul {
+    margin-bottom: 20px;
+}
+.footer li {
+    position: relative;
+    display: inline;
+    padding: 0 7px 0 10px;
+}
+.footer li:before {
+    content:' '; 
+    width: 1px;
+    height: 12px;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.footer li:first-child::before {
+    width: 0;
+    height: 0;
+}
+
